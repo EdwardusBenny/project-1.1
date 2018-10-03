@@ -31,23 +31,24 @@ class Header extends Component {
 
     renderNavbar = () => {
         if(this.props.auth.username !== "") {
-            return (<Navbar fixedTop={true} inverse collapseOnSelect>
+            return (
+            <Navbar fixedTop={true} inverse collapseOnSelect color="light" light expand="md">
                 <Navbar.Header>
                     <Navbar.Brand>
-                        <Link to="/">Kucing Bertasbih</Link>
+                        <Link to="/"><img src="../images/logo.jpg"></img></Link>
                     </Navbar.Brand>
                     <Navbar.Toggle />
                 </Navbar.Header>
                 <Navbar.Collapse>
                     <Nav>
                         <NavItem eventKey={1}>
-                            <Link to="/albumlist">Album List</Link>
+                            <Link to="/">Album List</Link>
                         </NavItem>
                         <NavItem eventKey={2}>
                             <Link to="/movielist">Movie List</Link>
                         </NavItem>
                         <NavDropdown eventKey={3} title="Products" id="basic-nav-dropdown">
-                            <MenuItem eventKey={3.1}>Celana Dalam</MenuItem>
+                        <MenuItem eventKey={3.1}><i className="	fa fa-laptop"></i>Laptop & Aksesoris</MenuItem>
                             <MenuItem eventKey={3.2}>Kancut</MenuItem>
                             <MenuItem eventKey={3.3}>Sempak</MenuItem>
                             <MenuItem divider />
@@ -71,7 +72,7 @@ class Header extends Component {
         return (<Navbar fixedTop={true} inverse collapseOnSelect>
             <Navbar.Header>
                 <Navbar.Brand>
-                    <Link to="/">Kucing Bertasbih</Link>
+                <Link to="/"><img src="../images/logo.jpg"></img></Link>
                 </Navbar.Brand>
                 <Navbar.Toggle />
             </Navbar.Header>
@@ -84,7 +85,7 @@ class Header extends Component {
                         <Link to="/movielist">Movie List</Link>
                     </NavItem>
                     <NavDropdown eventKey={3} title="Products" id="basic-nav-dropdown">
-                        <MenuItem eventKey={3.1}>Celana Dalam</MenuItem>
+                        <MenuItem eventKey={3.1}><i className="	fa fa-laptop"></i>Laptop & Aksesoris</MenuItem>
                         <MenuItem eventKey={3.2}>Kancut</MenuItem>
                         <MenuItem eventKey={3.3}>Sempak</MenuItem>
                         <MenuItem divider />

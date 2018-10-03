@@ -1,21 +1,21 @@
 import React, { Component } from 'react';
 
-class MovieDetail extends Component {
+class ProductDetail extends Component {
     render() {
-        const { title, description, url, image } = this.props.movie;
+        const { name, description, url, image } = this.props.product;
         return (
             <div className="col-md-4 col-sm-6 portfolio-item">
                 <a className="portfolio-link" href={url}>
                     <div className="portfolio-hover">
                         <div className="portfolio-hover-content">
-                        <i className="fa fa-plus fa-3x"></i>
+                        <i className="	fa fa-shopping-cart fa-3x"></i>
                         <div>Add to Cart</div>
                         </div>
                     </div>
                     <img style={{ margin: "auto"}} className="img-responsive" src={image} alt="" />
                 </a>
                 <div className="portfolio-caption">
-                    <h4>{title}</h4>
+                    <h4>{name}</h4>
                     <p className="text-muted">{description}</p>
                 </div>
             </div>
@@ -23,4 +23,4 @@ class MovieDetail extends Component {
     }
 }
 
-export default MovieDetail;
+export default ProductDetail;

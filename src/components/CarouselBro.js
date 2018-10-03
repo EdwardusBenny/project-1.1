@@ -1,5 +1,10 @@
 import React, { Component } from 'react';
 import { Carousel } from 'react-responsive-carousel';
+import ia from '../images/herowatch.jpg';
+import ib from '../images/surface.jpg';
+import ic from '../images/bannerthum.jpg';
+import {Link} from 'react-router-dom';
+
 
 class CarouselBro extends Component {
     kucingBertasbih = () => {
@@ -10,19 +15,22 @@ class CarouselBro extends Component {
     render() {
         return (
             <div>
-                <Carousel showThumbs={false} showIndicators={false} className="container kucing">
-                    <div className="merdeka">
-                        <img src={this.props.image1} alt="BDO 1" />
-                        <p className="legend">{this.props.legend1}</p>
+                <Carousel infiniteLoop={true} autoPlay={true} showThumbs={false} showIndicators={false} className="container kucing">
+                <a href="./">
+                    <div className="merdeka" >
+                        <img src={ia} alt="BDO 1"/>
                     </div>
+                    </a>
+                    <a href="./">
                     <div className="merdeka">
-                        <img src={this.props.image2} alt="BDO 2" />
-                        <p className="legend">{this.props.legend2}</p>
+                        <img src={ib} alt="BDO 2" />
                     </div>
+                    </a>
+                     <a href="./">
                     <div className="merdeka">
-                        <img src={this.props.image3} alt="BDO 3"/>
-                        <p className="legend">{this.props.legend3}</p>
+                        <img src={ic} alt="BDO 3"/>
                     </div>
+                    </a>
                 </Carousel>
                 {this.kucingBertasbih()}
             </div>
