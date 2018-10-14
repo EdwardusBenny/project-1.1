@@ -4,6 +4,7 @@ import { Link } from 'react-router-dom';
 import { connect } from 'react-redux';
 import Cookies from 'universal-cookie';
 import { onLogout, keepLogin, cookieChecked } from '../actions';
+import image1 from '../images/logo.png';
 
 const cookies = new Cookies();
 
@@ -35,7 +36,7 @@ class Header extends Component {
             <Navbar fixedTop={true} inverse collapseOnSelect color="light" light expand="md">
                 <Navbar.Header>
                     <Navbar.Brand>
-                        <Link to="/"><img src="../images/logo.jpg"></img></Link>
+                        <Link to="/"><img src={image1}height="80px" width="140px"></img ></Link>
                     </Navbar.Brand>
                     <Navbar.Toggle />
                 </Navbar.Header>
@@ -72,7 +73,7 @@ class Header extends Component {
         return (<Navbar fixedTop={true} inverse collapseOnSelect>
             <Navbar.Header>
                 <Navbar.Brand>
-                <Link to="/"><img src="../images/logo.jpg"></img></Link>
+                <Link to="/"><img src={image1}height="80px" width="140px"></img ></Link>
                 </Navbar.Brand>
                 <Navbar.Toggle />
             </Navbar.Header>

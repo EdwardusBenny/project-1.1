@@ -6755,3 +6755,18 @@ button.close {
   }
 }
 /*# sourceMappingURL=bootstrap.css.map */
+
+
+.navbar-warna {
+background-color:teal;
+background-image: none;
+background-repeat: no-repeat;
+}
+
+.navbar-default .navbar-nav,
+.navbar-default .navbar-nav > li > a {
+  color: black;
+  background-color: yellow;
+  border-color: green;
+  background-image: none;
+}

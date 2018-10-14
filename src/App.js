@@ -9,6 +9,8 @@ import LoginPage from './components/LoginPage';
 import RegisterPage from './components/RegisterPage';
 import MovieManage from './components/MovieManage';
 import ProductPage from './components/ProductPage';
+import Footer from './components/Footer';
+
 
 class App extends Component {
   state = { kucingIn: false, namakucing : "Briana" }
@@ -32,7 +34,9 @@ class App extends Component {
           <Route path="/moviemanage" component={MovieManage}/>
           <Route path="/productpage" component={ProductPage}/>
         </div>
+        <Footer/>
       </div>
+      
     );
   }
 }
